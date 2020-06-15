@@ -81,30 +81,6 @@ namespace ChatApp
         private void Form1_Load(object sender, EventArgs e)
         {
             this.AcceptButton = button3;
-
-            /*
-            //verilerimizi sakliyacagimiz dosyalar
-            string path1 = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\ChatApp";
-            string path2 = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\ChatApp\Users";
-            string path3 = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\ChatApp\config.json";
-
-            DirectoryInfo directory = new DirectoryInfo(path1);
-            DirectoryInfo directory2 = new DirectoryInfo(path2);
-            List<Veriler> verimiz = new List<Veriler>();
-            Giris giris2 = new Giris();
-           
-            if (!Directory.Exists(path1))
-            {
-                directory.Create();
-                directory2.Create();
-                label4.Text = giris2.Usernamee.ToString();
-              
-            }
-            else
-            {
-                
-                
-            }*/
             label4.Text = Username;
             ArkadasListesi();
         }
